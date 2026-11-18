@@ -1,0 +1,20 @@
+.grille {
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+  border: 1px solid #ccc;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.case {
+  height: 50px;
+  border: 1px solid #eee;
+}
+
+.entete, .heure {
+  background: #f5f5f5;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
