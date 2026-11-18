@@ -8,3 +8,12 @@
   justify-content: center;
   z-index: 1;
 }
+
+.creneau button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 2px;
+}

@@ -1,6 +1,6 @@
 import './Creneau.css'
 
-function Creneau({ matiere, jour, heure, duree, couleur }) {
+function Creneau({ matiere, jour, heure, duree, couleur, onDeplacer }) {
   return (
     <div
       className="creneau"
@@ -10,7 +10,9 @@ function Creneau({ matiere, jour, heure, duree, couleur }) {
         background: couleur,
       }}
     >
-      {matiere}
+      <button onClick={() => onDeplacer(-1)}>◀</button>
+      <span>{matiere}</span>
+      <button onClick={() => onDeplacer(1)}>▶</button>
     </div>
   )
 }
